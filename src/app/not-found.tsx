@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const NotFound = () => {
   return (
-    <Container className="flex flex-col items-center justify-center min-h-screen">
-      <Typography variant="h4" className="mb-4" color={'black'}>
+    <section className="bg-cover bg-center min-h-screen flex flex-col justify-center items-center">
+      <Typography variant="h4" className="mb-4">
         404 - Page Not Found
       </Typography>
       <Link href="/">
@@ -13,7 +13,7 @@ const NotFound = () => {
           Go Home
         </Button>
       </Link>
-    </Container>
+    </section>
   );
 };
 

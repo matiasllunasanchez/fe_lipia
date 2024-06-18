@@ -13,13 +13,20 @@ const Dashboard: React.FC = () => {
   };
 
   return (
-    <Container className="min-h-screen flex flex-col justify-center items-center">
-      <Typography variant="h4">Welcome, User</Typography>
-      <Typography variant="h6">Email: user@example.com</Typography>
+    <section
+      className="bg-cover bg-center min-h-screen flex flex-col justify-center items-center w-full"
+      style={{ backgroundImage: "url('/images/background-image.jpg')" }}
+    >
+      <Typography variant="h4" color={"black"}>
+        Welcome, User
+      </Typography>
+      <Typography variant="h6" color={"black"}>
+        Email: user@example.com
+      </Typography>
       <Button onClick={handleLogout} variant="contained" color="secondary">
         Logout
       </Button>
-    </Container>
+    </section>
   );
 };
 

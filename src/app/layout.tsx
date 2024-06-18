@@ -19,13 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={classNames(
-          inter.className,
-          "bg-cover bg-center min-h-screen flex justify-center items-center "
-        )}
-        style={{ backgroundImage: "url('./images/background-image.jpg')" }}
-      >
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/inter-var-latin.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+      </head>
+      <body className={classNames(inter.className)}>
         <Providers>{children}</Providers>
       </body>
     </html>

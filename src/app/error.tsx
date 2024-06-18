@@ -12,7 +12,8 @@ const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
   }, [error]);
 
   return (
-    <Container className="flex flex-col items-center justify-center min-h-screen">
+    // <Container className="flex flex-col items-center justify-center min-h-screen"> // REVISAR PORQUE FUNCA MAL
+    <section className="bg-cover bg-center min-h-screen flex flex-col justify-center items-center">
       <Typography variant="h4" className="mb-4">
         Something went wrong!
       </Typography>
@@ -26,7 +27,7 @@ const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
       >
         Go Home
       </Button>
-    </Container>
+    </section>
   );
 };
 
