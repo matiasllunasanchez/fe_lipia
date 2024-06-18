@@ -9,7 +9,6 @@ const Dashboard: React.FC = () => {
   const router = useRouter();
 
   const handleLogout = () => {
-    // Aquí puedes manejar el cierre de sesión
     router.push("/");
   };
 
