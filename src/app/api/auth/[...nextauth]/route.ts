@@ -15,6 +15,12 @@ const handler = NextAuth({
     GoogleProvider({
       clientId: googleClientId,
       clientSecret: googleClientSecret,
+      authorization: {
+        params: {
+          scope:
+            "openid email profile https://www.googleapis.com/auth/drive.readonly",
+        },
+      },
     }),
   ],
   pages: {
@@ -36,7 +42,7 @@ const handler = NextAuth({
       return baseUrl + "/dashboard";
     },
   },
-  debug: true, // Habilita la depuración para obtener más información en la consola
+  debug: true,
 });
 
 export { handler as GET, handler as POST };

@@ -36,3 +36,7 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 # https://colorhunt.co/palette/fdffe283b4ff5a72a01a2130
+
+# TO GOOGLE DRIVE ACCESS YOU NEED TO ADD YOUR GMAIL ACCOUNTS ON TEST USERS.
+
+# 100 MAX
